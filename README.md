@@ -25,4 +25,9 @@ Masala itself is released under an AGPL 3.0 licence.  This is a stronger copylef
 
 # Use of this patch
 
+To patch your copy of Rosetta:
 
+1.  Obtain the correct version of Rosetta.  This patch has been tested against Rosetta 3.14, revision 931f7d9046b1ae0a0b62c826dea7edc4a33f52ab.  However, it can likely be used to patch newer versions of Rosetta as well.  Note that Rosetta is not open-source software: its current licence allows non-commercial use for free, or commercial use for a fee.  Rosetta may be obtained from <a href="https://rosettacommons.org/software/">https://rosettacommons.org/software/</a>.
+2.  Change to the Rosetta/main/ directory: `cd <path to Rosetta>/Rosetta/main`.
+3.  Apply the patch: `patch -p1 < <path to patch>/masala.patch`.
+4.  Recompile Rosetta with Masala support: `cd source && ./scons.py -j <number of parallel compilation processes> mode=release extras=masala bin`.
