@@ -34,5 +34,5 @@ To patch your copy of Rosetta:
 4.  Obtain the correct version of the [Masala Core library](https://github.com/flatironinstitute/masala_public).  This patch has been tested against Masala Core version 1.0, revision 7ab1abb448a76193ba65cd1eb605c301ed8a794a.  However, it should work wth newer versions of Masala's Core library.
 5.  Build Masala's Core library.  (Follow the instructions in Masala's README.md.)
 6.  Recompile Rosetta with Masala support: `cd source && ./scons.py -j <number of parallel compilation processes> mode=release extras=masala bin`.
-7.  Obtain whichever Masala plugin libraries (_e.g._ the [c389ea27189ed431c5f30718cf7d86843feeab8e](Standard Masala Plugins)) you wish to use with Rosetta, and build them.
+7.  Obtain whichever Masala plugin libraries (_e.g._ the [Standard Masala Plugins](https://github.com/flatironinstitute/masala_public_standard_plugins)) you wish to use with Rosetta, and build them.
 8.  When running a Rosetta application, pass the path to the Masala plugin library or libraries that you wish to use using the `-masala_plugins` commandline flag.  Masala plugin libraries will be loaded on Rosetta initialization, and Masala plugin modules will be available for use from within Rosetta protocols.
