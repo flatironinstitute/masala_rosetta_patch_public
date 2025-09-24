@@ -65,6 +65,20 @@ index 08277bb375f..dc106167da3 100644
 -}
 \ No newline at end of file
 +}
+diff --git a/source/external/boost_submod/functional b/source/external/boost_submod/functional
+index 28b1b25b946..6a573e4b833 160000
+--- a/source/external/boost_submod/functional
++++ b/source/external/boost_submod/functional
+@@ -1 +1 @@
+-Subproject commit 28b1b25b9464abb3fd5783e10f49df40d6aac2ff
++Subproject commit 6a573e4b8333ee63ee62ce95558c3667348db233
+diff --git a/source/external/rdkit/rdkit.upstream b/source/external/rdkit/rdkit.upstream
+index dff58ab7bd0..18175e85ad6 160000
+--- a/source/external/rdkit/rdkit.upstream
++++ b/source/external/rdkit/rdkit.upstream
+@@ -1 +1 @@
+-Subproject commit dff58ab7bd06f613989590633819e52bdc053982
++Subproject commit 18175e85ad615d8d20fba7f9d24c47fe4ba81555
 diff --git a/source/src/apps/benchmark/performance/performance_benchmark.cc b/source/src/apps/benchmark/performance/performance_benchmark.cc
 index 15ce994b2ec..c8e49f33f5a 100644
 --- a/source/src/apps/benchmark/performance/performance_benchmark.cc
